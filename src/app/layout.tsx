@@ -1,7 +1,12 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+
+// Assets
 import './globals.css';
+
+// Components
 import Navbar from './components/NavBar';
+import Greeting from './components/Greeting';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,12 +19,15 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-}) {
+}) {  
   return (
     <html lang="en" className={inter.className}>
       <body className="bg-gray-100 flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-grow container mx-auto p-4">{children}</main>
+        <main className="flex-grow container mx-auto p-4">
+          <Greeting />
+          {children}
+        </main>
         <footer className="bg-gray-800 text-gray-200 p-4 text-center">
           &copy; {new Date().getFullYear()} All rights reserved.
         </footer>

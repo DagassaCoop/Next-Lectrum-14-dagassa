@@ -11,6 +11,12 @@ export default function Navbar() {
           <Link href="/" className="px-4 py-2 bg-white text-blue-600 rounded hover:bg-gray-100 transition">
             Home
           </Link>
+          <Link href="/profile" className="px-4 py-2 bg-white text-blue-600 rounded hover:bg-gray-100 transition">
+            Profile
+          </Link>
+          <Link href="/about" className="px-4 py-2 bg-white text-blue-600 rounded hover:bg-gray-100 transition">
+            About
+          </Link>
         </div>
       </div>
     </nav>
