@@ -17,17 +17,15 @@ const Team = () => {
                 <div className="flex flex-col w-full justify-center items-center gap-5">
                     <div className="mb-10 w-full text-center">
                         <Image src="/images/avatar.jpg" alt="Team Member 1" width={100} height={100} className="rounded-full mx-auto w-32 h-32 mb-4" />
-                        <h3 className="text-xl font-semibold mb-2"><Link href={'/teacher/about'}>John Doe</Link></h3>
+                        <h3 className="text-xl font-semibold mb-2">John Doe</h3>
                         <p className="text-gray-600 mb-2">Lead Developer</p>
                         <p className="text-gray-500 text-sm mb-2">John is a full-stack developer with over 10 years of experience in building scalable web applications.</p>
-                        <h4 className="text-xl font-semibold"><Link href={'/teacher/about'}>Go To Profile</Link></h4>
                     </div>
                     <div className="mb-10 w-full text-center">
                         <Image src="/images/avatar.jpg" alt="Team Member 2" width={100} height={100} className="rounded-full mx-auto w-32 h-32 mb-4" />
-                        <h3 className="text-xl font-semibold mb-2"><Link href={'#'}>Jessica Smith</Link></h3>
+                        <h3 className="text-xl font-semibold mb-2">Jessica Smith</h3>
                         <p className="text-gray-600 mb-2">UI/UX Designer</p>
                         <p className="text-gray-500 text-sm mb-2">Jessica specializes in creating user-friendly interfaces and is passionate about enhancing user experiences.</p>
-                        <h4 className="text-xl font-semibold"><Link href={'#'}>Go To Profile</Link></h4>
                     </div>
                 </div>
             </section>
