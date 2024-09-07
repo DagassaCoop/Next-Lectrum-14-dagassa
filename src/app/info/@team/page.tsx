@@ -1,9 +1,7 @@
-import Team from '@/src/components/Team';
+import Team from "@/src/components/Team";
 
 const TeamPage = () => {
-  return (
-      <Team />
-  );
-}
+  return <Team />;
+};
 
 export default TeamPage;
