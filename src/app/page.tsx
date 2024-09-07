@@ -1,8 +1,19 @@
-export default function Home() {
+import CourseList from "../components/CourseList";
+import ProfileInfo from "../components/ProfileInfo";
 
+const Home = async () => {
   return (
-    <section className="text-center p-8 bg-white rounded-lg shadow-lg space-y-6">
-      <h1 className="text-3xl font-bold">Welcome to the Homepage!</h1>
-    </section>
+    <main className="min-h-screen">
+      <div className="flex justify-between pt-[40px] pb-[50px] flex-row max-xl:flex-col mx-[3vw] gap-8">
+        <section className="w-[75%] max-xl:mb-[40px]">
+          <CourseList />
+        </section>
+        <aside className="w-[25%] max-xl:w-full">
+          <ProfileInfo />
+        </aside>
+      </div>
+    </main>
   );
-}
+};
+
+export default Home;
