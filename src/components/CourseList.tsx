@@ -2,6 +2,8 @@ import { getBaseURL } from "@/src/lib";
 import { CourseType, NewsType } from "@/src/types";
 import CourseCard from "./CourseCard";
 
+export const revalidate = 10;
+
 const CourseList = async () => {
   const courses = await fetch(`${getBaseURL()}/api/courses`, { cache: 'no-store'}).then(res => res.json()) as CourseType[]
 
