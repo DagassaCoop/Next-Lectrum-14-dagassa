@@ -4,7 +4,7 @@ import { ContactType } from "../types";
 export const dynamicParams = false;
 
 const Contact = async () => {
-    const contacts = await fetch(`${getBaseURL()}/api/contact`, { cache: 'force-cache' }).then(res => res.json()) as ContactType
+    const contacts = await fetch(`${getBaseURL()}/api/contact`, { cache: 'no-cache' }).then(res => res.json()) as ContactType
 
     return (
         <div className="max-auto md:px-6 py-[50px]">

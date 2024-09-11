@@ -5,7 +5,7 @@ import Link from "next/link";
 export const revalidate = 10;
 
 const NewsPage = async () => {
-  const newsData = await fetch(`${getBaseURL()}/api/news`, { cache: 'no-store' }).then(res => res.json()) as NewsType[]
+  const newsData = await fetch(`${getBaseURL()}/api/news`, { cache: 'no-cache' }).then(res => res.json()) as NewsType[]
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">

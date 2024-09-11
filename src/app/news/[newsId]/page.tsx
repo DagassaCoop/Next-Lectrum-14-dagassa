@@ -11,7 +11,7 @@ export async function generateStaticParams() {
 }
 
 const NewsPage = async ({ params }: { params: { newsId: string } }) => {
-    const res = await fetch(`${getBaseURL()}/api/news/${params.newsId}`, { cache: 'no-store' });
+    const res = await fetch(`${getBaseURL()}/api/news/${params.newsId}`, { cache: 'no-cache' });
 
     if (!res.ok) {
         return <p>News not found</p>;

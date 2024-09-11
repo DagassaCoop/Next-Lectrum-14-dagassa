@@ -12,7 +12,7 @@ export async function generateStaticParams() {
 const Course = async ({ params }: { params: { courseId: string } }) => {
   const course = (await fetch(
     `${getBaseURL()}/api/courses/${params.courseId}`,
-    { cache: "no-store" }
+    { cache: "no-cache" }
   ).then((res) => res.json())) as CourseType;
 
   if (!course) {

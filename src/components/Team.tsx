@@ -3,7 +3,7 @@ import { getBaseURL } from "@/src/lib";
 import { TeamType } from "@/src/types";
 
 const Team = async () => {
-    const team = await fetch(`${getBaseURL()}/api/team`, { cache: 'no-store'}).then(response => response.json()) as TeamType[]
+    const team = await fetch(`${getBaseURL()}/api/team`, { cache: 'no-cache'}).then(response => response.json()) as TeamType[]
 
     return (
         <div className="max-auto md:px-6 py-[50px]">
